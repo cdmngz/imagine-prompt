@@ -1,7 +1,7 @@
 // src/app/debug/session/page.tsx
 
-import { auth } from "@/auth";
 import { redirect } from "next/navigation";
+import { auth } from "@/auth";
 
 export default async function Page() {
   const session = await auth();

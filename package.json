@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "vitest run",
     "lint": "eslint"
   },
   "dependencies": {
@@ -17,14 +18,17 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@testing-library/react": "^16.3.3",
     "@types/node": "^26.5.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^10.10.0",
+    "eslint": "^9.39.5",
     "eslint-config-next": "16.3.4",
+    "jsdom": "^30.0.1",
     "knip": "^6.35.1",
     "tailwindcss": "^4",
-    "typescript": "^7.0.2"
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.0"
   },
   "packageManager": "pnpm@9.15.4+sha256.9bee59c7313a216722c079c1e22160dea7f88df4e0c3450b1d7b01b882336c6a"
 }
