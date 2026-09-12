@@ -1,16 +1,25 @@
 version: 2
+
 updates:
   - package-ecosystem: "npm"
     directory: "/"
+
     schedule:
       interval: "daily"
-      time: "04:00"
-      timezone: "Europe/Madrid"
+      time: "00:00"
+
     groups:
-      everything:
-        applies-to: version-updates
-        patterns: ["*"]
+      all-major-updates:
+        update-types:
+          - "major"
+
+      all-minor-updates:
+        update-types:
+          - "minor"
+          - "patch"
+
     open-pull-requests-limit: 10
+
     commit-message:
       prefix: "deps"
       include: "scope"
